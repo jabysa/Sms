@@ -2,15 +2,15 @@
     "name": "jaby/sms",
     "description": "Package for send Iran sms that work with any company",
     "type": "composer-plugin",
+    "require": {
+        "php": ">=7.0.0"
+    },
     "authors": [
         {
             "name": "jaber sabzali",
             "email": "jaber_sabzali@yahoo.com"
         }
     ],
-    "require": {
-        "php": ">=7.0.0"
-    },
     "autoload": {
         "psr-4": {
             "Jaby\\Sms\\" : "src/"
