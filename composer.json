@@ -29,5 +29,12 @@
             "Jaby\\Sms\\": "src"
         },
         "files": []
+    },
+    "extra": {
+        "class": "Jaby\\Sms\\"
+    },
+    "require-dev": {
+        "composer/composer": "^1.3"
     }
+
 }
