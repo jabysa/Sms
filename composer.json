@@ -31,10 +31,16 @@
         "files": []
     },
     "extra": {
-        "class": "Jaby\\Sms\\"
+        "laravel": {
+            "providers": [
+                "Jaby\\Sms\\SmsServiceProvider"
+            ],
+            "aliases": {
+                "Sms": "Jaby\\Sms\\Sms"
+            }
+        }
     },
     "require-dev": {
         "composer/composer": "^1.3"
     }
-
 }

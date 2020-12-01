@@ -16,10 +16,6 @@ class SmsServiceProvider extends ServiceProvider
 
         $this->mergeConfigFrom(__DIR__.'/config/sms.php','sms');
 
-        $this->app->register('Jaby\Sms\SmsServiceProvider');
-        $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-        $loader->alias('Sms', 'Jaby\Sms\Sms');
-
     }
 
     public function boot()
