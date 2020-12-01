@@ -1,25 +1,39 @@
 {
     "name": "jaby/sms",
     "description": "Package for send Iran sms that work with any company",
-    "type": "composer-plugin",
-    "require": {
-        "php": ">=7.0.0"
-    },
     "authors": [
         {
             "name": "jaber sabzali",
             "email": "jaber_sabzali@yahoo.com"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "Jaby\\Sms\\" : "src/"
-        }
-    },
     "extra": {
         "class": "Jaby\\Sms\\"
     },
     "require-dev": {
         "composer/composer": "^1.3"
+    },
+    "type": "library",
+    "require": {
+        "php": ">=7",
+        "laravel/framework": ">=6.2"
+    },
+    "keywords": [
+        "sms",
+        "sms ir",
+        "sms iran",
+        "iran sms",
+        "farazsms",
+        "kavenegar",
+        "ghasedak",
+        "iranian sms",
+        "sms service provider"
+    ],
+    "homepage": "https://github.com/AliGhaleyan/Sms",
+    "autoload": {
+        "psr-4": {
+            "Jaby\\Sms\\": "src"
+        },
+        "files": []
     }
 }
