@@ -23,7 +23,7 @@ For PHP integration you can use [jaby/sms](https://github.com/jaby/sms) package.
 
 - Others are under way.
 
-**Help me to add the gateways below by creating `pull requests`**
+**Help me to add the services below by creating `pull requests`**
 
 - sms.ir
 - mellipayamak.com
@@ -134,7 +134,6 @@ First you have to add the name of your driver, in the drivers array and also you
 
 Now you have to create a Driver Map Class that will be used to send sms.
 
-Eg. You created a class: `App\Packages\PaymentDriver\MyDriver`.
 Eg. You created a class: `App\Packages\Sms\MyDriver`.
 
 ```php
