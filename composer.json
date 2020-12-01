@@ -12,8 +12,5 @@
         "psr-4": {
             "Jaby\\Sms\\" : "src/"
         }
-    },
-    "require": {
-        "illuminate/support" : "~5"
     }
 }
