@@ -1,7 +1,8 @@
 {
     "name": "jaby/sms",
     "description": "Package for send Iran sms that work with any company",
-    "type": "composer-plugin",
+    "type": "library",
+    "license": "MIT",
     "require": {
         "php": ">=7.0.0"
     },
@@ -12,8 +13,13 @@
         }
     ],
     "autoload": {
+        "files": [
+            "autoload.php"
+        ],
         "psr-4": {
             "Jaby\\Sms\\" : "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
+
 }
