@@ -16,13 +16,3 @@ You can add this library as a local, per-project dependency to your project usin
  composer require jaby/sms
 ```
 
-## Add aliases & providers
-
-```
-'providers'
-        Jaby\Sms\SmsServiceProvider::class
-         
-'aliases' 
-        'Sms' => Jaby\Sms\Sms::class,       
-        
-```
