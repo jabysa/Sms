@@ -6,7 +6,7 @@
 [![Software License][ico-license]](LICENSE.md)
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads on Packagist][ico-download]][link-packagist]
-[![Quality Score][ico-code-quality]][link-code-quality]
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jabysa/Sms/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/jabysa/Sms/?branch=main)
 
 This is a Laravel Package for Sms Services Integration. This package supports `Laravel 5.8+`.
 
@@ -329,9 +329,7 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-version]: https://img.shields.io/packagist/v/jaby/sms.svg?style=flat-square
 [ico-download]: https://img.shields.io/packagist/dt/jaby/sms.svg?color=%23F18&style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/jaby/sms.svg?label=Code%20Quality&style=flat-square
 
 [link-packagist]: https://packagist.org/packages/jaby/sms
-[link-code-quality]: https://scrutinizer-ci.com/g/jabysa/Sms
 [link-author]: https://github.com/jabysa
 [link-contributors]: ../../contributors
