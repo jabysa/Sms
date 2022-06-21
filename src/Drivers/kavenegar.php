@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\SmsDriver;
+namespace Jaby\Sms\Drivers;
 
 use Illuminate\Support\Facades\Http;
 use Jaby\Sms\SmsInterface;
