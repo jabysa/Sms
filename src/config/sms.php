@@ -30,6 +30,14 @@ return [
             'urlNormal'   => 'https://ippanel.com/services.jspd',
             'from'        => '+983000505',
         ],
+        'kavenegar' => [
+            'username'    => 'username',
+            'password'    => 'password',
+            'token'       => '123123123123213213123123234324',
+            'urlPattern'  => 'https://api.kavenegar.com/v1',
+            'urlNormal'   => 'https://api.kavenegar.com/v1',
+            'from'        => '2000500666',
+        ]
     ],
 
     /*
@@ -46,5 +54,6 @@ return [
 
     'map' => [
         'farazsms'      => Jaby\Sms\Drivers\farazsms::class,
+        'kavenegar'     => Jaby\Sms\Drivers\kavenegar::class,
     ]
 ];
