@@ -44,7 +44,13 @@ return [
             'urlPattern'  => 'https://api.kavenegar.com/v1',
             'urlNormal'   => 'https://api.kavenegar.com/v1',
             'from'        => '2000500666',
-        ]
+        ],
+        'smsir' => [
+            'apiKey'      => '',
+            'urlPattern'  => 'https://api.sms.ir/v1/send/verify',
+            'urlNormal'   => 'https://api.sms.ir/v1/send/bulk',
+            'from'        => '+983000505',
+        ],
     ],
 
     /*
@@ -63,5 +69,6 @@ return [
         'ippanel'       => Jaby\Sms\Drivers\ippanel::class,
         'farazsms'      => Jaby\Sms\Drivers\farazsms::class,
         'kavenegar'     => Jaby\Sms\Drivers\kavenegar::class,
+        'smsir'         => Jaby\Sms\Drivers\smsir::class,
     ]
 ];
