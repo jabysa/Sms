@@ -23,6 +23,13 @@ return [
     |
     */
     'drivers' => [
+        'ippanel' => [
+            'username'    => 'username',
+            'password'    => 'password',
+            'urlPattern'  => 'https://ippanel.com/patterns/pattern',
+            'urlNormal'   => 'https://ippanel.com/services.jspd',
+            'from'        => '+983000505',
+        ],
         'farazsms' => [
             'username'    => 'username',
             'password'    => 'password',
@@ -53,6 +60,7 @@ return [
     */
 
     'map' => [
+        'ippanel'       => Jaby\Sms\Drivers\ippanel::class,
         'farazsms'      => Jaby\Sms\Drivers\farazsms::class,
         'kavenegar'     => Jaby\Sms\Drivers\kavenegar::class,
     ]
