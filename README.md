@@ -19,6 +19,7 @@ For PHP integration you can use [jaby/sms](https://github.com/jaby/sms) package.
 
 
 # List of available drivers
+- [ippanel](https://ippanel.com/) :heavy_check_mark:
 - [farazsms](https://farazsms.com/) :heavy_check_mark:
 - [kavenegar](https://kavenegar.com/) :heavy_check_mark:
 
