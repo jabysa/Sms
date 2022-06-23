@@ -1,6 +1,13 @@
 {
     "name": "jaby/sms",
     "description": "Package for send Iran sms that work with any company",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jaber sabzali",
+            "email": "jaber_sabzali@yahoo.com"
+        }
+    ],
     "type": "library",
     "require": {
         "php": ">=7",
@@ -9,6 +16,7 @@
     "keywords": [
         "sms",
         "sms ir",
+        "ippanel",
         "sms iran",
         "iran sms",
         "farazsms",
@@ -18,12 +26,6 @@
         "sms service provider"
     ],
     "homepage": "https://github.com/Jaby/Sms",
-    "authors": [
-        {
-            "name": "jaber sabzali",
-            "email": "jaber_sabzali@yahoo.com"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "Jaby\\Sms\\": "src"
