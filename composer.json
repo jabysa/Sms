@@ -1,5 +1,6 @@
 {
     "name": "jaby/sms",
+    "type":"composer-plugin",
     "description": "Package for send Iran sms that work with any company",
     "license": "MIT",
     "authors": [
