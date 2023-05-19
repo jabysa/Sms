@@ -1,5 +1,6 @@
 {
     "name": "jaby/sms",
+    "type":"composer-plugin",
     "description": "Package for send Iran sms that work with any company",
     "license": "MIT",
     "authors": [
@@ -8,7 +9,6 @@
             "email": "jaber_sabzali@yahoo.com"
         }
     ],
-    "type": "library",
     "require": {
         "php": ">=7",
         "laravel/framework": ">=6.2"
