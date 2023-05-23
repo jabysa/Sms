@@ -162,7 +162,7 @@ class smsir implements SmsInterface
             throw new \Exception('The data must have just one OTP code');
 
         $mobile = $this->numbers;
-        if ($mobile = [])
+        if ($mobile == [])
             throw new \Exception('The mobile number must be set');
         if (count($mobile) > 1)
             throw new \Exception('The OTP code must send to just one mobile number');
