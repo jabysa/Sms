@@ -126,7 +126,7 @@ class ippanel implements SmsInterface
         $url = $this->url."?username=" . $username . "&password=" . urlencode($password) . "&from=$from&to=" . json_encode($to) . "&input_data=" . urlencode(json_encode($input_data)) . "&pattern_code=$pattern_code";
         $handler = curl_init($url);
         curl_setopt($handler, CURLOPT_CUSTOMREQUEST, "POST");
-        curl_setopt($handler, CURLOPT_POSTFIELDS, $input_data);
+        curl_setopt($handler, CURLOPT_POSTFIELDS, json_encode($input_data));
         curl_setopt($handler, CURLOPT_RETURNTRANSFER, true);
         $response = curl_exec($handler);
         return $response;
@@ -154,7 +154,7 @@ class ippanel implements SmsInterface
 
         $handler = curl_init($this->url);
         curl_setopt($handler, CURLOPT_CUSTOMREQUEST, "POST");
-        curl_setopt($handler, CURLOPT_POSTFIELDS, $param);
+        curl_setopt($handler, CURLOPT_POSTFIELDS, json_encode($param));
         curl_setopt($handler, CURLOPT_RETURNTRANSFER, true);
         $response2 = curl_exec($handler);
 
