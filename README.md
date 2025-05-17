@@ -23,12 +23,12 @@ For PHP integration you can use [jaby/sms](https://github.com/jaby/sms) package.
 - [farazsms](https://farazsms.com/) :heavy_check_mark:
 - [kavenegar](https://kavenegar.com/) :heavy_check_mark:
 - [sms.ir](https://sms.ir/) :heavy_check_mark:
+- [mellipayamak.com](https://mellipayamak.com/) :heavy_check_mark:
 
 - Others are under way.
 
 **Help me to add the services below by creating `pull requests`**
 
-- mellipayamak.com
 - farapayamak.ir
 - ...
 

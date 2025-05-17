@@ -51,6 +51,13 @@ return [
             'urlNormal'   => 'https://api.sms.ir/v1/send/bulk',
             'from'        => '+983000505',
         ],
+        'melipayamak' => [
+            'username'    => 'username',
+            'password'    => 'password',
+            'urlPattern'  => 'ttps://rest.payamak-panel.com/api/SendSMS/BaseServiceNumber',
+            'urlNormal'   => 'https://rest.payamak-panel.com/api/SendSMS/SendSMS',
+            'from'        => '5000...',
+        ],
     ],
 
     /*
@@ -70,5 +77,6 @@ return [
         'farazsms'      => Jaby\Sms\Drivers\farazsms::class,
         'kavenegar'     => Jaby\Sms\Drivers\kavenegar::class,
         'smsir'         => Jaby\Sms\Drivers\smsir::class,
+        'melipayamak'   => Jaby\Sms\Drivers\melipayamak::class,
     ]
 ];
