@@ -143,46 +143,59 @@ class smsir implements SmsInterface
         curl_setopt($handler, CURLOPT_CUSTOMREQUEST, "POST");
         curl_setopt($handler, CURLOPT_POSTFIELDS, $body);
         curl_setopt($handler, CURLOPT_RETURNTRANSFER, true);
-        $response = curl_exec($handler);
-        $response2 = json_decode($response);
-
-        return $response;
+        return curl_exec($handler);
     }
 
-    /**
-     * @return array
-     * @throws \Exception
-     */
     private function setPatternExceptions()
     {
         $parameters = $this->data;
-        if (is_null($parameters))
-            throw new \Exception('The data must be set');
-        elseif (count($parameters) > 1)
-            throw new \Exception('The data must have just one OTP code');
+        $this->validateData($parameters);
 
         $mobile = $this->numbers;
-        if ($mobile == [])
+        $this->validateMobile($mobile);
+
+        $templateId = $this->templateId;
+        $this->validateTemplateId($templateId);
+
+        $checkParameter = (gettype($parameters[0]) != 'array') ? $parameters[0] : $parameters;
+        $this->validateParameterStructure($checkParameter);
+
+        return compact('parameters', 'mobile', 'templateId');
+    }
+
+    private function validateData($parameters)
+    {
+        if (is_null($parameters))
+            throw new \Exception('The data must be set');
+        if (count($parameters) > 1)
+            throw new \Exception('The data must have just one OTP code');
+    }
+
+    /**
+     * @param $mobile
+     * @return void
+     * @throws \Exception
+     */
+    private function validateMobile($mobile)
+    {
+        if (empty($mobile))
             throw new \Exception('The mobile number must be set');
         if (count($mobile) > 1)
             throw new \Exception('The OTP code must send to just one mobile number');
+    }
 
-        $templateId = $this->templateId;
+    private function validateTemplateId($templateId)
+    {
         if (is_null($templateId))
             throw new \Exception('The templateId must be set');
+    }
 
-
-        if (gettype($parameters[0]) != 'array')
-            $checkParameter = $parameters[0];
-        else
-            $checkParameter = $parameters;
-
-        if (!isset($checkParameter['name']))
+    private function validateParameterStructure($param)
+    {
+        if (!isset($param['name']))
             throw new \Exception('The `name` parameter not defined in data');
-        if (!isset($checkParameter['value']))
+        if (!isset($param['value']))
             throw new \Exception('The `value` parameter not defined in data');
-
-        return compact('parameters', 'mobile', 'templateId');
     }
 
     /**
